@@ -1,0 +1,103 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Borel&display=swap");
+
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/_95269760_clouds3.jpg) no-repeat center;
+    background-size: cover;
+    overflow-y: hidden;
+    font-family: 'Borel', cursive;
+}
+.weather{
+    background-color: #2f365f;
+    width: 350px;
+    border-radius:  7px;
+    border: 5px solid rgb(93, 140, 163);
+    border-radius: 9px;
+    padding: 0px 190px;
+    opacity: .80;
+    animation: swap 2s linear infinite alternate ;
+
+}
+
+@keyframes swap{
+    0%{ 
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+
+.weather h3{
+    color: #f9fcff;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 16px 15px;
+
+
+}
+.cityEntrance{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#nowC{
+    font-size: 50px;
+}
+#nowCText{
+    font-size:30px;
+}
+
+
+.cityEntrance p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(245, 252, 255);    
+}
+.cityEntrance input{
+    padding: 10px 50px 10px 50px;
+}
+
+.cityButton{
+ padding: 20px 50px 20px 50px;
+ font-weight: 700; 
+ font-size: 20px;
+ color: rgb(255, 255, 255); 
+ border: 2px solid rgb(191, 191, 238);
+ margin-top: 20px;
+ margin-bottom: 30px;
+ background-color: #2f365f;
+}
+.cityButton:hover{
+    background-color:#115c92 ;
+    transition: background-color 0.5s ease;
+}
+.bigCitys{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    color:white;
+    margin-top: 40px;
+}
+#nowWeather{
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    display:none;
+}
+.show {
+    display:flex !important;
+}
+.bigCitys div{
+    padding:0px 40px;
+}
+
